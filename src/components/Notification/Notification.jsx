@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Notification({ massage }) {
   return (
@@ -7,3 +8,7 @@ export default function Notification({ massage }) {
     </>
   );
 }
+
+Notification.propTypes = {
+  massage: PropTypes.string.isRequired,
+};

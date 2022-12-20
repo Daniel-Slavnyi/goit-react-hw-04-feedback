@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Notification from 'components/Notification/Notification';
 import { Text, WrapList } from './Statistics.styled';
 
@@ -35,3 +36,10 @@ export default function Statistics({
     </>
   );
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.func.isRequired,
+  positivePercentage: PropTypes.func.isRequired,
+};
