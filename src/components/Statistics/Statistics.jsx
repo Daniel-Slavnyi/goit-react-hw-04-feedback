@@ -1,5 +1,6 @@
 import React from 'react';
 import Notification from 'components/Notification/Notification';
+import { Text, WrapList } from './Statistics.styled';
 
 export default function Statistics({
   good,
@@ -11,23 +12,23 @@ export default function Statistics({
   return (
     <>
       {total() > 0 ? (
-        <ul>
+        <WrapList>
           <li>
-            <p>Good: {good}</p>
+            <Text>Good: {good}</Text>
           </li>
           <li>
-            <p>Neutral: {neutral}</p>
+            <Text>Neutral: {neutral}</Text>
           </li>
           <li>
-            <p>Bad: {bad}</p>
+            <Text>Bad: {bad}</Text>
           </li>
           <li>
-            <p>Total: {total()}</p>
+            <Text>Total: {total()}</Text>
           </li>
           <li>
-            <p>Positive feedback: {positivePercentage()}%</p>
+            <Text>Positive feedback: {positivePercentage()}%</Text>
           </li>
-        </ul>
+        </WrapList>
       ) : (
         <Notification massage="There is no feedback" />
       )}

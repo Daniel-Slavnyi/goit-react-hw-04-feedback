@@ -1,17 +1,18 @@
 import React from 'react';
+import { Button, WrapBtn } from './FeedbackOptions.module';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <div>
-      <ul>
+      <WrapBtn>
         {options.map(btn => (
           <li key={btn}>
-            <button type="button" name={btn} onClick={onLeaveFeedback}>
+            <Button type="button" name={btn} onClick={onLeaveFeedback}>
               {btn}
-            </button>
+            </Button>
           </li>
         ))}
-      </ul>
+      </WrapBtn>
     </div>
   );
 }

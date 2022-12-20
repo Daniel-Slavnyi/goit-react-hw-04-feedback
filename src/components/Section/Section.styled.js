@@ -1,7 +1,15 @@
 import styled from "@emotion/styled";
 
 export const SectionWrap = styled.section`
-border: 5px solid #ff00de;
+border: 2px solid #ff00de;
+box-sizing: border-box;
+width: 500px;
+margin: 0 auto;
+margin-bottom: 100px;
+margin-top: 50px;
+padding: 20px 50px;
+border-radius: 15px;
+box-shadow: 0px 0px 15px 5px rgb(226 39 247);
 ` 
 
 export const Title = styled.h2`
