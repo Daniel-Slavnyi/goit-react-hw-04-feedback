@@ -26,15 +26,15 @@ export const Button = styled.button`
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
+    #00ffff,
+    #ff00ff,
+    #E0FFFF,
+    #8A2BE2,
+    #8B008B,
+    #FF00FF,
+    #FFE4C4,
+    #7B68EE,
+    #87CEFA
   );
   position: absolute;
   top: -2px;
